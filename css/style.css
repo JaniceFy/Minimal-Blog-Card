@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Sora", sans-serif;
+    background-color: #FAFAFA;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    width: 35.2rem;
+    padding: 1.6rem;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 8px 8px 20px 0px rgba(0,0,0,0.05);
+}
+
+.main-img{
+    height: 15.2rem;
+    width: 100%;
+    border-radius: 12px;
+}
+
+span{
+    display: inline-block;
+    color: #883AE1;
+    background-color: #E6D6FC;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.3rem 1.4rem;
+    border-radius: 12px;
+    margin:1.6rem 0;
+}
+
+.heading-title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #20293A;
+    margin-bottom: 0.6rem;
+}
+
+.card-description{
+    color: #6C727F;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.line-break{
+    width: 100%;
+    height: 1px;
+    background-color: #E5EAF0;
+}
+
+.author-name{
+    font-size: 1.2rem;
+    color: #6C727F;
+    padding-top: 2rem;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+/* Estilos base */
+
+/* Media Queries para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .card-container {
+        width: 90%;
+    }
+
+    .main-img {
+        height: auto;
+    }
+
+    .heading-title {
+        font-size: 1.8rem;
+    }
+
+    .card-description {
+        font-size: 1.2rem;
+    }
+
+    .author-name {
+        font-size: 1rem;
+    }
+}
+
+/* Media Queries para pantallas aún más pequeñas, como dispositivos móviles */
+@media only screen and (max-width: 480px) {
+    .card-container {
+        padding: 0.8rem;
+    }
+
+    .heading-title {
+        font-size: 1.6rem;
+    }
+
+    .card-description {
+        font-size: 1rem;
+    }
+
+    .author-name {
+        font-size: 0.8rem;
+    }
+}
